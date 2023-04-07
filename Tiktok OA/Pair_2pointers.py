@@ -23,20 +23,6 @@ def fancyPairPair(pairs, k1, k2):
     # print("result: ", res)
     return res
 
-
-
-    """
-    k2_lst = [num[1] for num in pairs[0: right + 1]]
-    k2_lst.sort()
-    for i in range(right + 1):
-        soft_cap = k2 - pairs[i][1]
-        curr = binarySearch2(k2_lst, soft_cap)
-        if pairs[i][1] <= soft_cap:
-            res += curr - 1
-        else:
-            res += curr
-    return res
-    """
 # return index
 def binarySearch(lst, target, indexed):
     if target < lst[0][indexed]:
