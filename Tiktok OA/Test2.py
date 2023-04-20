@@ -1,11 +1,13 @@
-y_dev = {0: 2, 1: 3, 2: 4, 3: 2, 4: 3, 5: 0, 6: 7, 7: 8, 8: 9, 9: 0}
+# Python program for implementation of Insertion Sort
+def insertionSort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i-1
+        while j >=0 and key < arr[j] :
+                arr[j+1] = arr[j]
+                j -= 1
+        arr[j+1] = key
+    return arr
 
-p = []
-for i in range(10):
-  p.append([])
-print(p)
-p[0] += [1]
-print(p)
-for i in range(10):
-    p[y_dev[i]] += [i]
-print(p)
+a = [2, 5, 3, 1, 6, 4]
+print(insertionSort(a))
