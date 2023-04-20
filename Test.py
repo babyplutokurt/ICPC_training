@@ -23,3 +23,4 @@ class MinStack:
 
     def retrieve(self):
         return self.stack[-1]
+
